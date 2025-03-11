@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti 💜</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4b0082, #800080);
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #9400D3;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        .message {
+            display: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-width: 300px;
+            font-size: 18px;
+        }
+
+        .hearts {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hearts">💜💜💜</div>
+    
+    <div class="box" onclick="showMessage()">🎁 Haz clic 🎁</div>
+
+    <div class="message" id="message">
+        <p>Annabelancia 😼</p>
+        <p>Se que en este momento estás demasiado frustrada, pero quiero recordarte que estoy aquí para apoyarte. 
+        Sabes que te quiero musho, dark girl 😼 y aquí estaré cuando lo necesites. 
+        Recuerda que, aunque los problemas no desaparecen de un día para otro, llegará el momento en que lo harán 
+        y volverás a sonreír con esos cachetitos y ojazos brillantes. ♥️💞</p>
+    </div>
+
+    <audio id="song" src="https://www.mboxdrive.com/SweaterWeather.mp3"></audio>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+            document.getElementById("song").play();
+        }
+    </script>
+
+</body>
+</html>
